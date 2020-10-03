@@ -61,3 +61,9 @@ header nav ul il a {
     position: absolute;
     margin-left: 35%;
 }
+.pesquisa {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 3%;
+}
