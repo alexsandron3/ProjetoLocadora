@@ -32,11 +32,8 @@ figure{
 }
 .informacoes_filme{
     position: absolute;
+    color: rgb(255, 255, 255);
     margin-left: 11%;
-}
-.informacoes_filme {
-    position: absolute;
-    margin-left: 16%;
 }
 #pagina {
     width: 1220px;
@@ -69,4 +66,7 @@ header nav ul il a {
 }
 #txtbuscar {
     border-radius: 15px;
+}
+.inicio-filmes {
+    color: rgb(255, 255, 255)
 }
