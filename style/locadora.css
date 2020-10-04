@@ -33,11 +33,12 @@ figure {
     height: 300px;
     width: 600px;
     margin-left: 25%;
+    margin-top: 17%;
 }
 
 .informacoes_filme {
     position: absolute;
-    margin-left: 11%;
+    margin-left: 16%;
 }
 
 #pagina {
