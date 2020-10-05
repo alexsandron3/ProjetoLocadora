@@ -1,6 +1,7 @@
 * {
     background-size: cover;
     background-image: url(../img/Fundo.jpg);
+    text-decoration: none;
 }
 /* Apenas um coment�rio */
 body {
@@ -45,18 +46,22 @@ header nav ul {
     list-style: none;
     padding-left: 0;
 }
-header nav ul il {
+header nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
-header nav ul il a {
+header nav ul li a {
     font-size: 23px;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+}
+header nav li a:hover {
+    background: #1f3c58;
+    border-radius: 20px;
+    border: 8px solid #1f3c58;
 }
 .navbar {
     position: absolute;
-    margin-left: 35%;
+    margin-left: 37%;
 }
 .pesquisa {
     color: rgb(255, 255, 255);
@@ -69,4 +74,31 @@ header nav ul il a {
 }
 .inicio-filmes {
     color: rgb(255, 255, 255)
+}
+.menu-footer {
+    text-align: center;
+}
+.menu-footer ul li {
+    margin-right: 25px;
+}
+.menu-footer li a:hover {
+    background: #1f3c58;
+    border-radius: 20px;
+    border: 6px solid #1f3c58;
+}
+footer ul li {
+    font-size: 18px;
+    display: inline-block;
+}
+.footer ul li a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.social-midias {
+    margin-left: 81%;
+}
+.social-midias a img {
+    width: 30px;
+    height: 20px;
+    margin-right: 1%;
 }
