@@ -93,7 +93,7 @@ header nav li a:hover {
 }
 .menu-footer {
     text-align: center;
-    margin-top: 11%;
+    margin-top: 7%;
     margin-right: 55px;
 }
 .menu-footer ul li {
@@ -129,7 +129,7 @@ footer ul li {
     border: solid #304a4e 3px;
     width: 400px;
     height: 500px;
-    filter: invert(5%);
+    filter: opacity(70%);
     
 }
 
@@ -137,7 +137,7 @@ footer ul li {
     font-size: 20px;
 }
 .login:hover {
-    filter: contrast(100%);
+    filter: opacity(100%);
 }
 .inputEmailLogin {
     margin-left: 22%;
@@ -158,7 +158,7 @@ input[type="email"], input[type="password"] {
 
     border: 2px solid grey;
     border-radius: 4px;
-    background-color: #3CBC8D ;
+    background-color: black ;
     color: white;
   
   }
@@ -173,12 +173,12 @@ input[type="button"]{
 
 }
 .entrarButton {
-    background-color: blue;
+    background-color: grey;
     transition-duration: 0.3s; 
 }
 .entrarButton:hover{
-    background-color: #4CAF50; /* Green */
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 .lembrarButton {
     margin-top: 50%;
@@ -186,8 +186,12 @@ input[type="button"]{
 }
 
 .login p a {
-    color:green;
+    color:red;
     
+    
+}
+.login p a:hover {
+    text-decoration: inherit;
 }
 .login p {
     margin-top: 15%;
