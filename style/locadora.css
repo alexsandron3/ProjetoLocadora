@@ -2,6 +2,7 @@
     background-size: no-repeat;
     background-image: url(../img/Fundo.jpg);
     text-decoration: none;
+    color: white;
 }
 /* Apenas um coment�rio */
 body {
@@ -92,6 +93,7 @@ header nav li a:hover {
 }
 .menu-footer {
     text-align: center;
+    margin-top: 11%;
     margin-right: 55px;
 }
 .menu-footer ul li {
@@ -116,4 +118,87 @@ footer ul li {
     width: 30px;
     height: 20px;
     margin-right: 1%;
+}
+
+
+.login {
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 38%;
+    border: solid #304a4e 3px;
+    width: 400px;
+    height: 500px;
+    filter: invert(5%);
+    
+}
+
+.login input {
+    font-size: 20px;
+}
+.login:hover {
+    filter: contrast(100%);
+}
+.inputEmailLogin {
+    margin-left: 22%;
+    margin-top: 5%;
+
+}
+.inputSenhaLogin{
+    margin-left: 22%;
+}
+
+.login form .Logo_site {
+    margin-top: 10%;
+    margin-left: 12.39%;
+
+}
+
+input[type="email"], input[type="password"] {
+
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: #3CBC8D ;
+    color: white;
+  
+  }
+
+input[type="button"]{
+    margin-top: 10% ;
+    margin-left: 20%;
+    width: 160px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.entrarButton {
+    background-color: blue;
+    transition-duration: 0.3s; 
+}
+.entrarButton:hover{
+    background-color: #4CAF50; /* Green */
+  color: white;
+}
+.lembrarButton {
+    margin-top: 50%;
+    color: white;
+}
+
+.login p a {
+    color:green;
+    
+}
+.login p {
+    margin-top: 15%;
+    margin-left: 12% ;
+}
+#continuarConectado {
+    margin-left: 10%;
+}
+
+.login h1 {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: %;
 }
