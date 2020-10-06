@@ -9,7 +9,19 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="_bootstrap/_css/bootstrap.min.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/colorpicker.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/datepicker.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/uniform.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/select2.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/matrix-style.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/matrix-media.css" />
+    <link rel="stylesheet" href="_bootstrap/_css/bootstrap-wysihtml5.css" />
+    <link href="_bootstrap/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style type="text/css">.panel-body { }</style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,11 +36,12 @@
     <!-- contêiner de largura fixa responsivo -->
     <div class="container p-3 my-3 bg-dark text-white">
         <!-- container-fluid para largura total -->
-        <h2 class="text-center">Container responsivo</h2>
+        <h2 class="text-center">[cabeçalho] responsivo</h2>
 
         <br />
         <nav aria-label="...">
             <ul class="pager">
+                [menu]
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Saga</a></li>
                 <li><a href="#">Dúvidas</a></li>
@@ -37,68 +50,110 @@
 
             </ul>
 
-            <!--<div class="btn-group">
-                <button type="button" class="btn btn-danger">Action</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger">Categorias</button>
                 <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="caret"></span>
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Ação</a></li>
+                    <li><a href="#">Action & Adventure</a></li>
+                    <li><a href="#">Animação</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Comédia</a></li>
+                    <li><a href="#">Drama</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Família</a></li>
                 </ul>
-            </div>-->
+            </div>
 
         </nav>
-        
-        
-          <div class="panel panel-default">
+       
+        <div class="panel panel-default">
+
+            <!--<div class="panel-heading">
+                <div class="control-group">
+
+                    <span class="label label-default">Categorias</span>
+                    <div class="controls">
+                        <select>
+                            <option>Selecionar categoria</option>
+                            <option>Ação</option>
+                            <option>Action & Adventure</option>
+                            <option>Animação</option>
+                            <option>Animes</option>
+                            <option>Comédia</option>
+                            <option>Drama</option>
+                            <option>Família</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>-->
+
+
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Todos</a></li>
+                <li role="presentation"><a href="#">Filmes</a></li>
+                <li role="presentation"><a href="#">Séries</a></li>
+            </ul>
             
-            <div class="panel-heading">Título do painel
-            
-            </div>
             <div class="panel-body">
 
-                <div class="form-group">
-                    <!-- Inserir imagem da lupa de pesquisa -->
-                    <input type="text" class="form-control" id="form-group-input" placeholder="Pesquisar...">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h4 class="text-center">Vingadores</h4>
+                        <img src="img/Vingadores.jpg" alt="">
+                        <h4 class="text-center">Vingadores</h4>
 
-
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <img src="img/Vingadores.jpg" alt="">
-                            <div class="caption">
-                                <h3>Vingadores - Ultimato</h3>
-                                <p>2019</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <img src="img/VingadoresUltimato.jpg" alt="Guerra Infinita">
-                            <div class="caption">
-                                <h3>Vingadores: Guerra Infinita</h3>
-                                <p>2020</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-              
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h4 class="text-center">Vingadores</h4>
+                        <img src="img/VingadoresUltimato.jpg" alt="Guerra Infinita">
+                        <h4 class="text-center">Guerra Infinita</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h4 class="text-center">Animais Fantásticos</h4>
+                        <img src="img/AF1.jpg" width="187" height="278" alt="">
+                        <h4 class="text-center">Onde Habitam</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h4 class="text-center">Animais Fantásticos</h4>
+                        <img src="img/AF2.jpg" alt="Guerra Infinita">
+                        <h4 class="text-center">Os Crimes de Grindelwald</h4>
+
+                    </div>
+                </div>
+
+
+
+
+
 
             </div>
-            
-         
-          </div>
+
+
+        </div>
         
       
+        <nav aria-label="...">
+            <ul class="pager">
+                <li><a href="#">Anterior</a></li>
+                <li><a href="#">Próxima</a></li>
+            </ul>
+        </nav>
 
         <!-- imagem responsiva-->
         <!--<img src="imagens/estacio.jpg"
@@ -113,50 +168,6 @@
             <tr class="text-info"><td>Teste</td><td>Teste</td><td>Teste</td></tr>
         </table>
     </div>-->
-
-
-        <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
-            Clique aqui para conferir os lançamentos...
-        </button>
-        <div id="collapse" class="collapse">
-            <ul class="media-list">
-                <li class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object" src="http://placehold.it/64x64">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading 1</h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </div>
-                </li>
-                <li class="media">
-                    <div class="media-right">
-                        <a href="#">
-                            <img class="media-object" src="http://placehold.it/64x64">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading 2</h4>
-                        Morbi eget libero quis metus consectetur semper.
-                    </div>
-                </li>
-                <li class="media">
-                    <div class="media-left">
-                        <a href="#">
-                            <img class="media-object" src="http://placehold.it/64x64">
-                        </a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Media heading 3</h4>
-                        Suspendisse ullamcorper massa eget eleifend iaculis.
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-
 
 
 
