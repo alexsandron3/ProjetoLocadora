@@ -1,181 +1,115 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Catalogo</title>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ivone Guedes" />
+    <meta name="description" content="html5" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="_bootstrap/_css/bootstrap.min.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/colorpicker.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/datepicker.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/uniform.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/select2.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/matrix-style.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/matrix-media.css" />
-    <link rel="stylesheet" href="_bootstrap/_css/bootstrap-wysihtml5.css" />
-    <link href="_bootstrap/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-    <style type="text/css">.panel-body { }</style>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- renderização e o zoom de toque adequados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- carregar arquivos necessários -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="style/locadora.css" />
+
+    <title>Catálogo</title>
+
 </head>
 <body>
-    <!--<div class="page-header">
-        <h2>Exemplo de local <small> para o cabeçalho e subtexto para cabeçalho</small></h2>
-    </div>-->
     <!-- contêiner de largura fixa responsivo -->
     <div class="container p-3 my-3 bg-dark text-white">
         <!-- container-fluid para largura total -->
-        <h2 class="text-center">[cabeçalho] responsivo</h2>
 
-        <br />
-        <nav aria-label="...">
-            <ul class="pager">
-                [menu]
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Saga</a></li>
-                <li><a href="#">Dúvidas</a></li>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Registar</a></li>
-
-            </ul>
-
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger">Categorias</button>
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="caret"></span>
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Ação</a></li>
-                    <li><a href="#">Action & Adventure</a></li>
-                    <li><a href="#">Animação</a></li>
-                    <li><a href="#">Animes</a></li>
-                    <li><a href="#">Comédia</a></li>
-                    <li><a href="#">Drama</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Família</a></li>
-                </ul>
-            </div>
-
-        </nav>
-       
-        <div class="panel panel-default">
-
-            <!--<div class="panel-heading">
-                <div class="control-group">
-
-                    <span class="label label-default">Categorias</span>
-                    <div class="controls">
-                        <select>
-                            <option>Selecionar categoria</option>
-                            <option>Ação</option>
-                            <option>Action & Adventure</option>
-                            <option>Animação</option>
-                            <option>Animes</option>
-                            <option>Comédia</option>
-                            <option>Drama</option>
-                            <option>Família</option>
-                        </select>
-                    </div>
-
+        <div id="pagina">
+            <header>
+                <div class="logo">
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="#">Saga</a></li>
+                            <li><a href="#">Dúvidas</a></li>
+                            <li><a href="#">Entrar</a></li>
+                            <li><a href="#">Registar</a></li>
+                        </ul>
+                    </nav>
+                    <img src="./img/logo.png" alt="">
                 </div>
+            </header>
+
+            <div class="pesquisa">
+                <form>
+                    <label>
+                        <input type="text" placeholder="Pesquisar..." id="txtbuscar">
+                    </label>
+                    <input type="submit" value="Buscar...">
+                </form>
+            </div>
+            <br> </br>
+            <br> </br>
+            <br> </br>
+
+            <!--<div class="inicio-filmes">
+                <h1>Últimos Filmes</h1>
             </div>-->
-
-
-            <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#">Todos</a></li>
-                <li role="presentation"><a href="#">Filmes</a></li>
-                <li role="presentation"><a href="#">Séries</a></li>
-            </ul>
             
-            <div class="panel-body">
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <h4 class="text-center">Vingadores</h4>
-                        <img src="img/Vingadores.jpg" alt="">
-                        <h4 class="text-center">Vingadores</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <h4 class="text-center">Vingadores</h4>
-                        <img src="img/VingadoresUltimato.jpg" alt="Guerra Infinita">
-                        <h4 class="text-center">Guerra Infinita</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <h4 class="text-center">Animais Fantásticos</h4>
-                        <img src="img/AF1.jpg" width="187" height="278" alt="">
-                        <h4 class="text-center">Onde Habitam</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3">
-                    <div class="thumbnail">
-                        <h4 class="text-center">Animais Fantásticos</h4>
-                        <img src="img/AF2.jpg" alt="Guerra Infinita">
-                        <h4 class="text-center">Os Crimes de Grindelwald</h4>
-
-                    </div>
-                </div>
-
-
-
-
-
-
+            <div class="filmes">
+                <a href="hp1.html">
+                    <img src="./img/IMGHP1.jpg" alt="">Harry Potter P. Filosofal
+                </a>
+                <a href="hp2.html">
+                    <img src="./img/IMGHP2.jpg" alt="">Harry Potter Ord. Fênix
+                </a>
+                <a href="AnimaisFantasticos1.html">
+                    <img src="./img/AF1.jpg" alt="">Animais Fantásticos Habitam
+                </a>
+                <a href="AnimaisFantasticos2.html">
+                    <img src="./img/AF2.jpg" alt="">Animais Fantásticos Os Crimes
+                </a>
+                <br>
+                <a href="vingadores.html">
+                    <img src="./img/Vingadores.jpg" alt="">Vingadores
+                </a>
+                <a href="vingadoresUltimato.html">
+                    <img src="./img/VingadoresUltimato.jpg" alt="">Vingadores Ultimato
+                </a>
+                <a href="velozesFuriosos.html">
+                    <img src="./img/VelozesFuriosos.jpg">Velozes e Furiosos
+                </a>
+                <a href="reiLeao.html">
+                    <img src="./img/ReiLeao.jpg">Rei'Leão
+                </a>
             </div>
 
-
+            <!-- Rodapé -->
+            <div class="footer">
+                <footer>
+                    <nav class="menu-footer">
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-midias">
+                        <a href="#">
+                            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-512.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-512.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="">
+                        </a>
+                    </div>
+                </footer>
+            </div>
         </div>
-        
-      
-        <nav aria-label="...">
-            <ul class="pager">
-                <li><a href="#">Anterior</a></li>
-                <li><a href="#">Próxima</a></li>
-            </ul>
-        </nav>
-
-        <!-- imagem responsiva-->
-        <!--<img src="imagens/estacio.jpg"
-         class="rounded-circle mx-auto d-block img-fluid"
-         alt="Estácio" />
-    <br />-->
-        <!-- tabela-->
-        <!--<div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr class="text-danger"><td>Teste</td><td>Teste</td><td>Teste</td></tr>
-            <tr class="text-white"><td>Teste</td><td>Teste</td><td>Teste</td></tr>
-            <tr class="text-info"><td>Teste</td><td>Teste</td><td>Teste</td></tr>
-        </table>
-    </div>-->
-
-
 
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
