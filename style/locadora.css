@@ -1,12 +1,12 @@
-* {
-    background-size: no-repeat;
-    background-image: url(../img/Fundo.jpg);
+* {   
     text-decoration: none;
     color: white;
 }
 /* Apenas um coment�rio */
 body {
     font-family: Helvetica, sans-serif;
+    background-image: url(../img/Fundo.jpg);
+    background-size: no-repeat;
 }
 p {
     font-family: helvetica, sans-serif
@@ -200,5 +200,4 @@ input[type="button"]{
 .login h1 {
     text-align: center;
     margin-top: 10%;
-    margin-bottom: %;
 }
