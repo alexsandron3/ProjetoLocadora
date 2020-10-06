@@ -116,11 +116,12 @@ footer ul li {
 }
 .social-midias a img {
     width: 30px;
-    height: 20px;
+    height: 25px;
     margin-right: 1%;
 }
 
 
+/* Area de Login */
 .login {
     display: inline-block;
     position: relative;
@@ -139,52 +140,18 @@ footer ul li {
 .login:hover {
     filter: opacity(100%);
 }
-.inputEmailLogin {
-    margin-left: 22%;
+.inputFormLogin {
+    margin-left: 22% !important;
     margin-top: 5%;
 
 }
-.inputSenhaLogin{
-    margin-left: 22%;
-}
+
 
 .login form .Logo_site {
     margin-top: 10%;
     margin-left: 12.39%;
 
 }
-
-input[type="email"], input[type="password"] {
-
-    border: 2px solid grey;
-    border-radius: 4px;
-    background-color: black ;
-    color: white;
-  
-  }
-
-input[type="button"]{
-    margin-top: 10% ;
-    margin-left: 20%;
-    width: 160px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-
-}
-.entrarButton {
-    background-color: grey;
-    transition-duration: 0.3s; 
-}
-.entrarButton:hover{
-    background-color: #4CAF50;
-    color: white;
-}
-.lembrarButton {
-    margin-top: 50%;
-    color: white;
-}
-
 .login p a {
     color:red;
     
@@ -205,3 +172,123 @@ input[type="button"]{
     text-align: center;
     margin-top: 10%;
 }
+.entrarButton {
+    background-color: grey;
+    transition-duration: 0.3s; 
+}
+.entrarButton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+.lembrarButton {
+    margin-top: 50%;
+    color: white;
+}
+/* Area de Cadastro */
+.inputForm {
+    margin-left: 22% ;
+    margin-top: 5%;
+
+}
+.formContentCadastro {
+    display: inline-block;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 33%;
+    border: solid #304a4e 3px;
+    width: 600px;
+    height: 700px;
+    filter: opacity(70%);
+    
+}
+.formContentCadastro form {
+    text-align: center;
+} 
+
+.formContentCadastro input {
+    font-size: 20px;
+}
+.formContentCadastro:hover {
+    filter: opacity(100%);
+}
+
+.formContentCadastro form .Logo_site {
+    margin-top: 10%;
+    
+
+}
+.formContentCadastro p a {
+    color:red;
+    
+    
+}
+.formContentCadastro p a:hover {
+    text-decoration: inherit;
+}
+.formContentCadastro p {
+    margin-top: 15%;
+    text-align: center;
+    /* margin-left: 20% ; */
+}
+#continuarConectado {
+    margin-left: 10%;
+}
+
+.formContentCadastro h1 {
+    text-align: center;
+    margin-top: 10%;
+}
+.formContentCadastro input[type="button"]{
+    margin-top: 10% ;
+    margin-left: 30%;
+    width: 160px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.formContentCadastro input[type="date"] { /* Formatação do input localmente*/
+    background-color: white;
+    color: black;
+    width: 41%;
+    border-radius: 5px;
+    margin-left: 0%;
+
+}
+.formContentCadastro input[type="email"], input[type="password"], input[type="text"] {
+    margin-left: 0%;
+}
+.cadastrarButton {
+    background-color: grey;
+    transition-duration: 0.3s; 
+    margin-right: 30% !important;
+}
+.cadastrarButton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Formatação dos inputs globalmente*/
+input[type="email"], input[type="password"], input[type="text"] {
+
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: black ;
+    color: white;
+    
+  
+  }
+
+input[type="button"]{
+    margin-top: 10% ;
+    margin-left: 20%;
+    width: 160px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
