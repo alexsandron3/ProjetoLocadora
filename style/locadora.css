@@ -33,7 +33,18 @@ figure{
 .informacoes_filme{
     position: absolute;
     color: rgb(255, 255, 255);
-    margin-left: 11%;
+    margin-left: 17%;
+    
+    
+}
+.btn_compra{
+    font-family: Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 #pagina {
     width: 1220px;
