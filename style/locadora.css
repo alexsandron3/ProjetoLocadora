@@ -155,14 +155,20 @@ footer ul li {
     color: rgb(255, 255, 255);
 }
 .social-midias {
-    margin-left: 81%;
+    text-align: center;
 }
 .social-midias a img {
     width: 30px;
     height: 25px;
     margin-right: 1%;
 }
-
+#matricula p {
+    display: inline-block;
+    margin-right: 25px;
+}
+#matricula {
+    text-align: center;
+}
 
 /* Area de Login */
 .login {
