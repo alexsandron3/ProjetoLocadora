@@ -15,6 +15,11 @@ figure{
     height: 200px;
     width: 300px;
 }
+.compra-filme{
+
+    margin-top: 09px;
+text-align: center;
+}
 .Logo_site {
     height: auto;
     width: 320px;
@@ -39,12 +44,26 @@ figure{
 }
 .btn_compra{
     font-family: Arial;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    padding: 10px;
+    padding: 17px;
     cursor: pointer;
+    background: black; 
+    border: 1px solid white;
+    background-color: black;
+}
+.btn-local{
+    margin-bottom: 50px !important;
+    position: absolute;
+}
+.bnt_esquerda{
+ margin-bottom: 15px;
+}
+
+.bnt_direita{
+
 }
 #pagina {
     width: 1220px;
@@ -79,8 +98,21 @@ header nav li a:hover {
     margin-left: 23%;
     margin-top: 3%;
 }
+.bnt_buscar:hover{
+    opacity: 0.6;
+}
+.bnt_buscar{
+    cursor: pointer;
+    background: rgb(255, 255, 255); 
+    border: 1px solid  Grey;
+    background-color: black;
+    border-radius: 10.5px;
+    padding: 1.9px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
 #txtbuscar {
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 .inicio-filmes {
     color: rgb(255, 255, 255)
