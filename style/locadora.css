@@ -18,7 +18,7 @@ figure{
 .compra-filme{
 
     margin-top: 09px;
-text-align: center;
+    text-align: center;
 }
 .Logo_site {
     height: auto;
@@ -55,14 +55,33 @@ text-align: center;
     background-color: black;
 }
 .btn-local{
-    margin-bottom: 50px !important;
-    position: absolute;
+    margin-bottom: 50px 
+    position: absolute;   
 }
-.bnt_esquerda{
- margin-bottom: 15px;
-}
+.btn-verde{
+    font-family: Arial;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 17px;
+    cursor: pointer;
+    background: black; 
+    border: 2px solid rgb(141, 236, 133);
+    background-color: black;
 
-.bnt_direita{
+}
+.btn-vermelho{
+    font-family: Arial;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 17px;
+    cursor: pointer;
+    background: black; 
+    border: 2px solid rgb(240, 110, 110);
+    background-color: black;
 
 }
 #pagina {
