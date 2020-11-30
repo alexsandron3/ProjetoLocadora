@@ -42,6 +42,19 @@ figure{
     
     
 }
+.inf-perfil{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-left: 17%;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+.ftcartao{
+    width: 350px; 
+    margin-left: 305%;
+
+}
 .btn_compra{
     font-family: Arial;
     font-size: 15px;
@@ -83,6 +96,19 @@ figure{
     border: 2px solid rgb(240, 110, 110);
     background-color: black;
 
+}
+.perfil{
+    border-radius: 120px;
+    border: 3px solid  rgb(71, 98, 138);
+    max-width: 190px; 
+    max-height: 240px;
+    margin-top: 4%;
+}
+.infnome-perfil{
+    margin-top: 8%;
+    margin-left: 6.9%;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 #pagina {
     width: 1220px;
