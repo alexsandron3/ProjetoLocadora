@@ -20,7 +20,7 @@
                             <li><a href="cadastro.php">Registrar</a></li>
                         </ul>
                     </nav>
-                    <img src="./img/logo.png">
+                    <img src="img/Logo.png">
                 </div>
             </header>
             <div class="pesquisa">

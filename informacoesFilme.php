@@ -60,7 +60,7 @@
                 </p>
                 
                 <div class="btn-local">
-                    <li><a href = "FnzCompra.php"><button class="btn_compra">Comprar</button>
+                    <li><a href = "FnzCompra.php?id=<?php echo $rowBuscaFilmes['idFIlme']?>"><button class="btn_compra">Comprar</button>
                 </div>
             </div>
             <img  src="<?php echo $rowBuscaFilmes['linkImgFilme']; ?>" alt="Harry Potter" >  
