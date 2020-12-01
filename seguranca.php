@@ -26,9 +26,9 @@
             <div class="pesquisa">
                 <form>
                     <label>
-                        <input type="text" placeholder="Pesquisar..." id ="txtbuscar">
+                        <input type="text" placeholder="Pesquisar 🌎" id ="txtbuscar">
                     </label>
-                        <input type="submit" value="Buscar...">
+                        <input class="bnt_buscar"type="submit" value="Buscar 🔎">
                 </form>
             </div>
             <br> </br>

@@ -71,7 +71,7 @@
                 <input type="text" name="telefone" placeholder="Telefone:" value="<?php echo $telefoneUsuario ;?>"><br>
                 <label form="senha"></label>
                 <input type="password" name="senha" placeholder="Senha:" value="<?php echo $senhaUsuario; ?>"><br>
-                <input type="date" name="data" value="<?php echo $dataNascimento;?>">
+                <input id="data" type="date" name="data" value="<?php echo $dataNascimento;?>">
                 </div>
             <img class="perfil" src="img/imgperfil.jpg" alt="Imagem de Perfil">
             </figure>

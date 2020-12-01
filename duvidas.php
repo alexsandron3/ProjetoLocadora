@@ -44,12 +44,12 @@
                 </div>
             </header>
             <div class="pesquisa">
-                <from>
+                <form>
                     <label>
-                        <input type="text" placeholder="Pesquisar..." id ="txtbuscar">
+                        <input type="text" placeholder="Pesquisar 🌎" id ="txtbuscar">
                     </label>
-                        <input type="submit" value="Buscar...">
-                </from>
+                        <input class="bnt_buscar"type="submit" value="Buscar 🔎">
+                </form>
             </div>
             <br> </br>
             <br> </br>
