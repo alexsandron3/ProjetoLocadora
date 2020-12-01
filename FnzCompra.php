@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <link rel="stylesheet" href="style/locadora.css">
+        <link rel="stylesheet" type="text/css" href="style/locadora.css"/>
         <meta charset="utf-8"/>
-        <meta name= "description" content="Sinopse do Filme Harry Potter 1"/>
-        <meta name= "keywords" content="Filme,Locadora,Harry Potter,descrição"/>
+        <meta name= "description" content="Sinopse do Filme Animais Fantásticos e Onde Habitam "/>
+        <meta name= "keywords" content="Filme,Locadora,Animais Fantásticos,descrição"/>
         <meta name ="author" content="Os Sem Nome"/>
         <title>Pagina de Teste Sinopse</title>
     </head>
@@ -15,41 +15,29 @@
                     <li><a href="index.php">Início</a></li>
                     <li><a href="catalogo.php">Catálogo</a></li>
                     <li><a href="duvidas.php">Dúvidas</a></li>
-                    <li><a href="minhaconta.php">Minha Conta</a></li>
-                    <li><a href="index.php">Sair</a></li>
+                    <li><a href="login.php">Entrar</a></li>
+                    <li><a href="cadastro.php">Registar</a></li>
                 </ul>
             </nav>
         </header>
-        <img class="Logo_site" src="img/Logo.png" alt="">
+        <img class="Logo_site" src="img/Logo.png">
         <br> </br>
-        <br> </br>
-
-        <figure>
-            <figcaption> <h1><strong>Minha conta</strong></h1></figcaption>
-            <div class="inf-perfil">
-                <P>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ     ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-
-                </P>
-                <p>Email:</p>
-                <p>Data de Nascimento</p>
-                </div>
-            <img class="perfil" src="img/imgperfil.jpg" alt="Imagem de Perfil">
-            <img class="ftcartao" src="img/cartão.png">
-        </figure>
-
-        <div class="infnome-perfil">
-         <h3><strong>Nome</strong></h3>
-        <br> </br>
+        <div class="compra-filme">
+            <figcaption> <h3><strong>Animais Fantásticos e Onde Habitam </strong></h3></figcaption>             
+            <img class="Capa_FILME" src="img/AF1.jpg" alt="Animais Fantásticos e Onde Habitam"  >
+            <h3><strong>Preço: 850,00 <strong></h3>
+            <div class="btn-local">
+                <button class="btn-verde">Finalizar Comprar</button> 
+            </div> 
+                <a href="#"><button class="btn-vermelho">Cancelar Compra </button>
         </div>
-
-
         <div class="footer">
             <footer>
                 <nav class="menu-footer">
                     <ul>
-                        <li><a href="contato.php">Contato</a></li>
-                        <li><a href="termodeuso.php">Termo de Uso</a></li>
+                        <li><a href="termodeuso.php">Termos de Uso</a></li>
                         <li><a href="seguranca.php">Segurança</a></li>
+                        <li><a href="contato.php">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="social-midias">
@@ -67,6 +55,5 @@
                 </div>
             </footer>
         </div>
-
-    </body>
+     </body>
 </html>

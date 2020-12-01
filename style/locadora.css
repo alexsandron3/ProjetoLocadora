@@ -52,7 +52,8 @@ figure{
 }
 .ftcartao{
     width: 350px; 
-    margin-left: 305%;
+    margin-left: 290%;
+    position: absolute;
 
 }
 .btn_compra{
@@ -104,11 +105,23 @@ figure{
     margin-top: 4%;
 }
 .infnome-perfil{
-    margin-top: 8%;
-    margin-left: 6.9%;
+    margin-top: 6%;
+    margin-left: 4.5%;
     font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
+table {
+    width: 45%;
+    text-align: center;
+    border: 3px solid rgb(159, 167, 179);
+}
+#t01 tr:nth-child(even) {
+    background-color: #fff;
+}
+  #t01 th {
+    background-color: rgb(71, 98, 138);
+    color: white;
+  }
 #pagina {
     width: 1220px;
     margin: auto;

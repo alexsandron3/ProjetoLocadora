@@ -60,7 +60,7 @@
                     <p>Alexsandro Xavier (202002411023)</p>
                     <p>Gabriel Miranda (202002410906)</p>
                     <p>Ivone Guedes (202001084207)</p>
-                </div>
+                    </div>
                 </footer>
             </div>
         </div>
