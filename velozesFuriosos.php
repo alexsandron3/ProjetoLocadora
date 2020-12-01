@@ -6,7 +6,7 @@
             <meta name= "description" content="Sinopse Velozes & Furiosos: Hobbs & Shaw"/>
             <meta name= "keywords" content="Filme,Locadora,Velozes & Furiosos: Hobbs & Shaw,descrição"/>
             <meta name ="author" content="Os Sem Nome"/>
-            <title>Pagina de Teste Sinopse</title>
+            <title>Velozes e Furiosos: Hobbs e Shaw</title>
         </head>
         <body>
             <header>
@@ -16,7 +16,7 @@
                         <li><a href="catalogo.php">Catálogo</a></li>
                         <li><a href="duvidas.php">Dúvidas</a></li>
                         <li><a href="login.php">Entrar</a></li>
-                        <li><a href="cadastro.php">Registar</a></li>
+                        <li><a href="cadastro.php">Registrar</a></li>
                     </ul>
                 </nav>
        </header>

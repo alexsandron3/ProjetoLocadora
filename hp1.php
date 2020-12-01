@@ -6,7 +6,7 @@
         <meta name= "description" content="Sinopse do Filme Harry Potter 1"/>
         <meta name= "keywords" content="Filme,Locadora,Harry Potter,descrição"/>
         <meta name ="author" content="Os Sem Nome"/>
-        <title>Pagina de Teste Sinopse</title>
+        <title>Harry Potter e a Pedra Filosofal</title>
     </head>
     <body>
         <header>

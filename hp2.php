@@ -6,7 +6,7 @@
         <meta name= "description" content="Sinopse do Filme Harry Potter 2"/>
         <meta name= "keywords" content="Filme,Locadora,Harry Potter,descrição"/>
         <meta name ="author" content="Os Sem Nome"/>
-        <title>Pagina de Teste Sinopse</title>
+        <title>Harry Potter e a Ordem da Fênix</title>
     </head>
     <body>
         <header>
@@ -16,14 +16,14 @@
                     <li><a href="catalogo.php">Catálogo</a></li>
                     <li><a href="duvidas.php">Dúvidas</a></li>
                     <li><a href="login.php">Entrar</a></li>
-                    <li><a href="cadastro.php">Registar</a></li>
+                    <li><a href="cadastro.php">Registrar</a></li>
                 </ul>
             </nav>
        </header>
         <img class="Logo_site" src="img/Logo.png">
         <br> </br>
         <figure>
-            <figcaption> <h3><strong>Harry Potter e a Ordem da Fenix</strong></h3></figcaption>
+            <figcaption> <h3><strong>Harry Potter e a Ordem da Fênix</strong></h3></figcaption>
                 <div class="informacoes_filme">
                     <p>Diretor: David Yates</p>
                     <p>Elenco: Daniel Radcliffe,Rupert Grint,Emma Watson</p>
