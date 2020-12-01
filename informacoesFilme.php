@@ -6,7 +6,7 @@
         <meta name= "description" content="Sinopse do Filme Harry Potter 1"/>
         <meta name= "keywords" content="Filme,Locadora,Harry Potter,descrição"/>
         <meta name ="author" content="Os Sem Nome"/>
-        <title>Harry Potter e a Pedra Filosofal</title>
+        <title>Pagina de Teste Sinopse</title>
     </head>
     <body>
         <header>
@@ -60,7 +60,7 @@
                 </p>
                 
                 <div class="btn-local">
-                    <li><a href = "FnzCompra.php"><button class="btn_compra">Comprar</button>
+                    <li><a href = "FnzCompra.php?id=<?php echo $rowBuscaFilmes['idFIlme']?>"><button class="btn_compra">Comprar</button>
                 </div>
             </div>
             <img  src="<?php echo $rowBuscaFilmes['linkImgFilme']; ?>" alt="Harry Potter" >  

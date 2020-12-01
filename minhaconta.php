@@ -10,15 +10,51 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.php">Início</a></li>
-                    <li><a href="catalogo.php">Catálogo</a></li>
-                    <li><a href="duvidas.php">Dúvidas</a></li>
-                    <li><a href="minhaconta.php">Minha Conta</a></li>
-                    <li><a href="#">Sair</a></li>
-                </ul>
-            </nav>
+        <?php 
+                            session_start();
+                            include_once("PHP/conexao.php");
+                            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+                            {
+                            unset($_SESSION['email']);
+                            unset($_SESSION['senha']);
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='login.php'> Entrar </a></li>";
+                                    echo"<li><a href='cadastro.php'>Registrar</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";    
+                                
+                            }else{
+                                $email = $_SESSION['email'];
+                                $senha = $_SESSION['senha'];
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='minhaconta.php'> Minha Conta </a></li>";
+                                    echo"<li><a href='PHP/logout.php'>Sair</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";
+                        }
+                        //echo $email;
+                    $queryBuscaInformacoes = "SELECT * FROM usuarios WHERE emailUsuario='$email' AND senhaUsuario='$senha'";
+                    $resultadoBuscaInformacoes = mysqli_query($conexao, $queryBuscaInformacoes);
+                    $rowBuscaInformacoes = mysqli_fetch_assoc($resultadoBuscaInformacoes);
+                    $nomeUsuario = $rowBuscaInformacoes['nomeUsuario'];    
+                    $nomeCompleto = $rowBuscaInformacoes['nomeCompleto'];
+                    $emailUsuario = $rowBuscaInformacoes['emailUsuario'];
+                    $senhaUsuario = $rowBuscaInformacoes['senhaUsuario'];
+                    $dataNascimento = $rowBuscaInformacoes['dataNascimento'];
+                    $cpfUsuario = $rowBuscaInformacoes['cpfusuario'];
+                    $telefoneUsuario = $rowBuscaInformacoes['telefoneUsuario'];
+                    $idUsuario = $rowBuscaInformacoes['idUsuario']; 
+
+                    
+                    ?>
         </header>
         <img class="Logo_site" src="img/Logo.png" alt="">
         <br> </br>
@@ -29,31 +65,51 @@
                 <img class="ftcartao" src="img/cartão.png">
                 <br>
                 <br>
-                <input type="text" name="nome" placeholder="Nome:"><br>
-                <input type="text" name="cpf" placeholder="Cpf:"><br>
-                <input type="email" name="email" placeholder="Email:"><br>
-                <input type="text" name="telefone" placeholder="Telefone:"><br>
+                <input type="text" name="nome" placeholder="Nome:" value="<?php echo $nomeCompleto; ?>"><br>
+                <input type="text" name="cpf" placeholder="Cpf:" value="<?php echo $cpfUsuario; ?>"><br>
+                <input type="email" name="email" placeholder="Email:" value="<?php echo $emailUsuario; ?>"><br>
+                <input type="text" name="telefone" placeholder="Telefone:" value="<?php echo $telefoneUsuario ;?>"><br>
                 <label form="senha"></label>
-                <input type="password" name="senha" placeholder="Senha:"><br>
-                <input type="date" name="data">
+                <input type="password" name="senha" placeholder="Senha:" value="<?php echo $senhaUsuario; ?>"><br>
+                <input type="date" name="data" value="<?php echo $dataNascimento;?>">
                 </div>
             <img class="perfil" src="img/imgperfil.jpg" alt="Imagem de Perfil">
             </figure>
             <div class="infnome-perfil">
-                <h3><strong>Usuario</strong></h3>
+                <h3><strong><?php echo $nomeUsuario; ?></strong></h3>
                 <table id="t01">
                     <thead>
                         <tr>
                             <th>Meus Pedidos</th>
-                            <th>NomePedido</th>
-                            <th>NumeroPedido</th>
-                            <th>DatadoPedido</th>
+                            <th>Nome do Pedido</th>
+                            <th>Numero do Pedido</th>
+                            <th>Data do Pedido</th>
                             <th>Qntd</th>
                         </tr>
                     </thead>
+                    <?php
+                        $queryBuscaInformacoesPedidos = "SELECT * FROM filmes_usuarios WHERE idUsuario='$idUsuario'";
+                        $resultadoBuscaPedido = mysqli_query($conexao, $queryBuscaInformacoesPedidos);
+                        while ($rowBuscaPedido = mysqli_fetch_assoc($resultadoBuscaPedido)){
+                        $idPedido = $rowBuscaPedido['idPedido'];
+                        $nomePedido = $rowBuscaPedido['nomePedido'];
+                        $dataPedido = $rowBuscaPedido['dataPedido'];
+                        $qtdPedido = $rowBuscaPedido['qntdPedido'];
+                        $idUsuario = $rowBuscaPedido['idUsuario'];
+                        //$idFilme = $rowBuscaPedido['idFilme'];
+
+                    ?>
                     <tbody>
-                        <td>dasdadasdasdsadasdsad</td>
-                        <td>dasdasdasdsadsadadasdada</td>
+                        <tr>
+                            <td><?php echo"V"; ?></td>
+                            <td><?php echo $idPedido; ?></td>
+                            <td><?php echo $idPedido ;?></td>
+                            <td><?php echo $dataPedido; ?></td>
+                            <td><?php echo $qtdPedido; ?></td>
+                        </tr>
+                        <?php 
+                        }
+                        ?>
                     </tbody>
                 </table>
                 <br> </br>

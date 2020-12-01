@@ -10,15 +10,35 @@
     </head>
     <body>
         <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.php">Início</a></li>
-                    <li><a href="catalogo.php">Catálogo</a></li>
-                    <li><a href="duvidas.php">Dúvidas</a></li>
-                    <li><a href="login.php">Entrar</a></li>
-                    <li><a href="cadastro.php">Registrar</a></li>
-                </ul>
-            </nav>
+        <div class="logo">      
+                    <?php 
+                            session_start();
+                            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+                            {
+                            unset($_SESSION['email']);
+                            unset($_SESSION['senha']);
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='login.php'> Entrar </a></li>";
+                                    echo"<li><a href='cadastro.php'>Registrar</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";    
+                                
+                            }else{
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='minhaconta.php'> Minha Conta </a></li>";
+                                    echo"<li><a href='PHP/logout.php'>Sair</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";
+                        }
+                    ?>
        </header>
             <img class="Logo_site" src="img/Logo.png">
             <br> </br>

@@ -24,15 +24,34 @@
         <div id="pagina">
             <header>
                 <div class="logo">
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="index.php">Início</a></li>
-                            <li><a href="catalogo.php">Catálogo</a></li>
-                            <li><a href="duvidas.php">Dúvidas</a></li>
-                            <li><a href="login.php">Entrar</a></li>
-                            <li><a href="cadastro.php">Registrar</a></li>
-                        </ul>
-                    </nav>
+                <?php 
+                            session_start();
+                            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+                            {
+                            unset($_SESSION['email']);
+                            unset($_SESSION['senha']);
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='login.php'> Entrar </a></li>";
+                                    echo"<li><a href='cadastro.php'>Registrar</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";    
+                                
+                            }else{
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='minhaconta.php'> Minha Conta </a></li>";
+                                    echo"<li><a href='PHP/logout.php'>Sair</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";
+                        }
+                    ?>
                     <img src="./img/logo.png" alt="">
                 </div>
             </header>
@@ -48,10 +67,6 @@
             <br> </br>
             <br> </br>
             <br> </br>
-
-            <!--<div class="inicio-filmes">
-                <h1>Últimos Filmes</h1>
-            </div>-->
             
             <div class="filmes">
                 <a href="hp1.php">
