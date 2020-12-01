@@ -6,7 +6,7 @@
         <meta name= "description" content="Sinopse do Filme Animais Fantásticos e Onde Habitam "/>
         <meta name= "keywords" content="Filme,Locadora,Animais Fantásticos,descrição"/>
         <meta name ="author" content="Os Sem Nome"/>
-        <title>Pagina de Teste Sinopse</title>
+        <title>Compras</title>
     </head>
     <body>
         <header>
@@ -16,7 +16,7 @@
                     <li><a href="catalogo.php">Catálogo</a></li>
                     <li><a href="duvidas.php">Dúvidas</a></li>
                     <li><a href="login.php">Entrar</a></li>
-                    <li><a href="cadastro.php">Registar</a></li>
+                    <li><a href="cadastro.php">Registrar</a></li>
                 </ul>
             </nav>
         </header>
