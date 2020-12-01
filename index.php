@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿﻿<?php
+include_once("PHP/conexao.php");
+
+
+?>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
@@ -10,17 +15,37 @@
        <body>
            <div id="pagina">
                <header>
-                   <div class="logo">
-                        <nav class="navbar">
-                            <ul>
-                                <li><a href="index.php">Início</a></li>
-                                <li><a href="catalogo.php">Catálogo</a></li>
-                                <li><a href="duvidas.php">Dúvidas</a></li>
-                                <li><a href="login.php">Entrar</a></li>
-                                <li><a href="cadastro.php">Registar</a></li>
-                            </ul>
-                        </nav>
-                        <img src="./img/logo.png">
+                   <div class="logo">      
+                    <?php 
+                            session_start();
+                            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+                            {
+                            unset($_SESSION['email']);
+                            unset($_SESSION['senha']);
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='login.php'> Entrar </a></li>";
+                                    echo"<li><a href='cadastro.php'>Registrar</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";    
+                                
+                            }else{
+                            echo"<nav class='navbar'>";
+                                echo"<ul>";
+                                    echo"<li><a href='index.php'>Início</a></li>";
+                                    echo"<li><a href='catalogo.php'>Catálogo</a></li>";
+                                    echo"<li><a href='duvidas.php'>Dúvidas</a></li>";
+                                    echo"<li><a href='minhaconta.php'> Minha Conta </a></li>";
+                                    echo"<li><a href='PHP/logout.php'>Sair</a></li>";
+                                echo"</ul>";
+                            echo"</nav>";
+                        }
+                    ?>
+
+                        <img src="img/Logo.png">
                     </div>
                 </header>
                     <div class="pesquisa">
@@ -37,17 +62,20 @@
                     <div class="inicio-filmes">
                         <h1>Últimos Filmes</h1>
                     </div>
+                    
                     <div class="filmes">
-                        <a href="hp1.php"> <img src="./img/IMGHP1.jpg">Harry Potter P. Filosofal</a>
-                        <a href="hp2.php"> <img src="./img/IMGHP2.jpg">Harry Potter Ord. Fênix</a>
-                        <a href="AnimaisFantasticos1.php"> <img src="./img/AF1.jpg">Animais Fantásticos Habitam</a>
-                        <a href="AnimaisFantasticos2.php"> <img src="./img/AF2.jpg">Animais Fantásticos Os Crimes</a>
-                        <br>
-                        <a href="vingadores.php"> <img src="./img/Vingadores.jpg">Vingadores</a>
-                        <a href="vingadoresUltimato.php"> <img src="./img/VingadoresUltimato.jpg">Vingadores Ultimato</a>
-                        <a href="velozesFuriosos.php"> <img src="./img/VelozesFuriosos.jpg">Velozes e Furiosos</a>
-                        <a href="reiLeao.php"> <img src="./img/ReiLeao.jpg">Rei'Leão</a>
+                    <?php
+
+                        $queryBuscaFilmes = "SELECT * FROM filmes";
+                        $resultadoBuscaFilmes = mysqli_query($conexao, $queryBuscaFilmes);
+                        while ($rowBuscaFilmes = mysqli_fetch_assoc($resultadoBuscaFilmes)){
+                    ?>
+                        <a href="informacoesFilme.php?id=<?php echo $rowBuscaFilmes['idFIlme'];?>"> <img src="<?php echo $rowBuscaFilmes['linkImgFilme']; ?>"><?php echo $rowBuscaFilmes ['aliasFilme']; ?></a>
+                        <?php
+                        }
+                        ?>
                     </div>
+                    
                     <div class="footer">
                     <footer>
                         <nav class="menu-footer">

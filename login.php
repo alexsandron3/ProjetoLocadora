@@ -23,20 +23,18 @@
         
         
         <div class="login">
-            <form action="#">
+            <form action="PHP/loginUsuario.php" method="POST" autocomplete="OFF">
                 <img class="Logo_site" src="img/Logo.png">
                 <h1>ENTRAR</h1>
                 <label for="email"></label><br/>
-                <input type="email" class="inputFormLogin " name="email" placeholder="EMAIL"> <br/>
+                <input type="email" class="inputFormLogin" name="email" placeholder="EMAIL"> <br/>
                 
                 <label for="senha"></label>
-                <input type="password" class="inputFormLogin " name="senha" placeholder="SENHA"><br/>
+                <input type="password" class="inputFormLogin" name="senha" placeholder="SENHA"><br/>
                 
                 <input type="checkbox" name="continuarConectado" id="continuarConectado" > 
                 <label for="continuarConectado" class="lembrarButton">Lembrar</label>
-                <form action="">
-                    <input type="button" value="ENTRAR" class="entrarButton">
-                </form>
+                <button type="submit" value="CADASTRAR" class="cadastrarButton">LOGAR </button>
                 <p>Ainda não está cadastrado? Clique <a href="cadastro.php">AQUI</a> </p>
     
             </form>

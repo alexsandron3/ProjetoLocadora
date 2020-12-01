@@ -313,6 +313,7 @@ footer ul li {
 
 .formContentCadastro input {
     font-size: 20px;
+    margin-top:3.5%;
 }
 .formContentCadastro:hover {
     filter: opacity(100%);
@@ -369,6 +370,8 @@ footer ul li {
     background-color: grey;
     transition-duration: 0.3s; 
     margin-right: 30% !important;
+    margin-top: 4%;
+    margin-left: 30%;
 }
 .cadastrarButton:hover{
     background-color: #4CAF50;
